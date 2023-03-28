@@ -1,0 +1,56 @@
+.social-links {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-links a {
+  margin: 0 10px;
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.social-links i {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #333;
+  transition: all 0.3s ease;
+}
+
+.social-links i:hover {
+  opacity: 0.8;
+}
+
+/* Facebook */
+.social-links .fa-facebook-f:before {
+  content: "\f39e";
+}
+
+/* Twitter */
+.social-links .fa-twitter:before {
+  content: "\f099";
+}
+
+/* Instagram */
+.social-links .fa-instagram:before {
+  content: "\f16d";
+}
+
+/* LinkedIn */
+.social-links .fa-linkedin-in:before {
+  content: "\f0e1";
+}
+
+.icon {
+  color: #fff;
+  font-size: 30px;
+  margin-right: 10px;
+}

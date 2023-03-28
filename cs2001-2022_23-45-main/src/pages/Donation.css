@@ -1,0 +1,97 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.blue-button {
+  background: linear-gradient(-65deg, #c165dd, #1153fc);
+  box-shadow: 2px 2px 25px -7px #4c4c4c;
+  color: white;
+  font-size: 24px;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.blue-button:hover {
+  border: 1px solid #cac7f6;
+  background: transparent;
+}
+
+@media screen and (max-width: 100px) {
+  .blue-button {
+    font-size: 16px;
+    padding: 8px 16px;
+    margin: 5px;
+  }
+}
+
+.input-container {
+  margin-top: 20px;
+}
+
+.input-field {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.input-field::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.input-field:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+@media screen and (max-width: 100px) {
+  .input-field {
+    font-size: 16px;
+    padding: 8px;
+    max-width: 100%;
+  }
+}
